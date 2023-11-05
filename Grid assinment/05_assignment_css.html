@@ -1,0 +1,74 @@
+<!-- difference between justify_items and justify-self -->
+
+<!-- example is given below for justify-self and justify-items -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_05</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        border: 4px solid black;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: 100px 100px;
+        padding: 10px;
+        justify-self: center;
+    }
+    .container>div{
+        border: 1px solid black;
+        background-color: blueviolet;
+        padding: 10px;
+
+    }
+    .box{
+        display: grid;
+        border: 4px solid black;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: 100px 100px;
+        padding: 10px;
+        justify-items: center;  
+    }
+    .box>div{
+        border: 1px solid black;
+        background-color:yellow;
+        padding: 10px;
+    }
+</style>
+<body>
+    <h1>For justify-self = cneter</h1>
+    <div class="container">
+        <div class=" box1">K</div>
+        <div class=" box2">u</div>
+        <div class=" box3">n</div>
+        <div class=" box4">A</div>
+        <div class=" box5">A</div>
+        <div class=" box6">H</div>
+        <div class=" box7">A</div>
+        <div class=" box8">b</div>
+        </div>
+        <br>
+        <h1>
+            For justify-items = center
+        </h1>
+        <div class="box">
+            <div class=" item1">K</div>
+            <div class=" item2">u</div>
+            <div class=" item3">n</div>
+            <div class=" item4">A</div>
+            <div class=" item5">A</div>
+            <div class=" item6">H</div>
+            <div class=" item7">A</div>
+            <div class=" item8">b</div>
+            </div>
+</body>
+</html>
+
+<!-- container class is used for the justify-self
+
+box class is used for the justify-items -->
